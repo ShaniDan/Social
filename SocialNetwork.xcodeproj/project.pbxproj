@@ -13,6 +13,8 @@
 		25D989A628AF1D0500FAB215 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D989A528AF1D0500FAB215 /* Preview Assets.xcassets */; };
 		25D989A828AF1D0500FAB215 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D989A728AF1D0500FAB215 /* Persistence.swift */; };
 		25D989AB28AF1D0500FAB215 /* SocialNetwork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25D989A928AF1D0500FAB215 /* SocialNetwork.xcdatamodeld */; };
+		25D989BC28AF1E4900FAB215 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D989BB28AF1E4900FAB215 /* FeedView.swift */; };
+		25D989BE28AF1E6700FAB215 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D989BD28AF1E6700FAB215 /* TweetRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		25D989A528AF1D0500FAB215 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25D989A728AF1D0500FAB215 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		25D989AA28AF1D0500FAB215 /* SocialNetwork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialNetwork.xcdatamodel; sourceTree = "<group>"; };
+		25D989BB28AF1E4900FAB215 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		25D989BD28AF1E6700FAB215 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,10 @@
 		25D9899D28AF1D0500FAB215 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				25D989B628AF1D2B00FAB215 /* Extensions */,
+				25D989B528AF1D2700FAB215 /* Model */,
+				25D989B428AF1D2400FAB215 /* Service */,
+				25D989B128AF1D1900FAB215 /* Core */,
 				25D9899E28AF1D0500FAB215 /* SocialNetworkApp.swift */,
 				25D989A028AF1D0500FAB215 /* ContentView.swift */,
 				25D989A228AF1D0500FAB215 /* Assets.xcassets */,
@@ -71,6 +79,68 @@
 				25D989A528AF1D0500FAB215 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25D989B128AF1D1900FAB215 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25D989B828AF1D8B00FAB215 /* Tweets */,
+				25D989B728AF1D8800FAB215 /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		25D989B428AF1D2400FAB215 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		25D989B528AF1D2700FAB215 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25D989B628AF1D2B00FAB215 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25D989B728AF1D8800FAB215 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				25D989BA28AF1E1E00FAB215 /* ViewModels */,
+				25D989B928AF1E1B00FAB215 /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		25D989B828AF1D8B00FAB215 /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				25D989BD28AF1E6700FAB215 /* TweetRowView.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
+		25D989B928AF1E1B00FAB215 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25D989BB28AF1E4900FAB215 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25D989BA28AF1E1E00FAB215 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D989BC28AF1E4900FAB215 /* FeedView.swift in Sources */,
 				25D989A828AF1D0500FAB215 /* Persistence.swift in Sources */,
 				25D989A128AF1D0500FAB215 /* ContentView.swift in Sources */,
 				25D9899F28AF1D0500FAB215 /* SocialNetworkApp.swift in Sources */,
 				25D989AB28AF1D0500FAB215 /* SocialNetwork.xcdatamodeld in Sources */,
+				25D989BE28AF1E6700FAB215 /* TweetRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
